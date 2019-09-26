@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<SCRIPT type="text/javascript" src="js/jquery.js"></SCRIPT>
+
+<SCRIPT type="text/javascript">
+$(function(){	   
+	$('#giftNav_Her').click(function () {
+		$('#dayGiftFinder_giftsForHer').slideDown('slow');
+		$('#km_010911_VDayWarpper').css("height", "1100px"); 
+		$('a.nav_ForHer_Hover').css("background-position", "-80px 0px");
+		
+		$('#dayGiftFinder_giftsForHim, #dayGiftFinder_decor, #dayGiftFinder_giftsForKids').hide('');
+		$('a.nav_ForHim_Hover').css("background-position", "0px -79px");
+		$('a.nav_ForKids_Hover').css("background-position", "0px -157px");
+		$('a.nav_Decor_Hover').css("background-position", "0px -236px");
+										   });
+	
+	$('#giftNav_Him').click(function () {
+		$('#dayGiftFinder_giftsForHim').slideDown('');
+		$('#km_010911_VDayWarpper').css("height", "1100px");
+		$('a.nav_ForHim_Hover').css("background-position", "-80px -79px");
+		
+		$('#dayGiftFinder_giftsForHer, #dayGiftFinder_decor, #dayGiftFinder_giftsForKids').hide('');
+		$('a.nav_ForHer_Hover').css("background-position", "0px 0px");
+		$('a.nav_ForKids_Hover').css("background-position", "0px -157px");
+		$('a.nav_Decor_Hover').css("background-position", "0px -236px");
+										   });
+	
+	$('#giftNav_Kids').click(function () {
+		$('#dayGiftFinder_giftsForKids').slideDown('');
+		$('#km_010911_VDayWarpper').css("height", "1100px");
+		$('a.nav_ForKids_Hover').css("background-position", "-80px -157px");
+		
+		$('#dayGiftFinder_giftsForHer, #dayGiftFinder_giftsForHim, #dayGiftFinder_decor').hide('');
+		$('a.nav_ForHer_Hover').css("background-position", "0px 0px");
+		$('a.nav_Decor_Hover').css("background-position", "0px -236px");
+		$('a.nav_ForHim_Hover').css("background-position", "0px -79px");
+										   });
+	
+	$('#giftNav_Decor').click(function () {
+		$('#dayGiftFinder_decor').slideDown('');
+		$('#km_010911_VDayWarpper').css("height", "1100px");
+		$('a.nav_Decor_Hover').css("background-position", "-80px -236px");
+		
+		$('#dayGiftFinder_giftsForHer, #dayGiftFinder_giftsForHim, #dayGiftFinder_giftsForKids').hide('');
+		$('a.nav_ForHer_Hover').css("background-position", "0px 0px");
+		$('a.nav_ForKids_Hover').css("background-position", "0px -157px");
+		$('a.nav_ForHim_Hover').css("background-position", "0px -79px");
+										   });
+});
+</SCRIPT>
+<style>
+/***** GLOBAL *****/
+#km_010911_VDayWarpper {background-color: #fff; width: 1030px; margin: 0px auto; padding: 25px;}
+#km_010911_VDayWarpper h2 {font-family: Arial, Helvetica, sans-serif; font-size:16px; color:#ec519d; font-weight:lighter; padding: 0px; margin:4px 0px;}
+#km_010911_VDayWarpper a {text-decoration: none; color: #666; outline:none;}
+#km_010911_VDayWarpper a:hover {text-decoration: underline;}
+#km_010911_VDayWarpper p {font-family: Arial, Helvetica, sans-serif; font-size:12px; color: #666; padding:0px; margin:0px;}
+#km_010911_VDayWarpper .bold {font-weight: bold;}
+#km_010911_VDayWarpper .pink {color:#ec519d;}
+#km_010911_VDayWarpper .shipping{font-size:11px; padding:3px 0px}
+#km_010911_VDayWarpper .clear {clear: both;}
+
+/***** LEFT CONTENT *****/
+#km_010911_VDayWarpper #vday_leftContent {float: left; width: 280px;}
+#km_010911_VDayWarpper #vdayLogo{background:url('images/010911_KmVday_LoveHappens.jpg') no-repeat; width:279px; height: 200px;}
+/** CAROUSEL **/
+#vdayCarousel_wrapper {width: 214px; height: 189px; background:url('images/010911_KmVday_carouselBkgd.jpg') repeat-x; margin: 37px 0px 0px 25px; padding:5px; position:relative;}
+#vdayCarousel_wrapper .arrowLeft {position: absolute;left: 20px;top: 105px;}
+#vdayCarousel_wrapper .arrowRight {position: absolute;left: 195px;top: 105px;}
+#vdayCarousel_slides {width: 204px; height: 179px; background-color: #fff; text-align:center; padding: 5px;}
+#vdayCarousel_slides .downloadCTA {background:url(images/010911_KmVday_arrowDownload.jpg) no-repeat right; width: 100px; margin:0px auto;}
+
+/***** RIGHT CONTENT *****/
+#km_010911_VDayWarpper #vday_rightContent {float: right; width: 750px;}
+#km_010911_VDayWarpper #vdayHero {width: 539px; height: 319px; margin-left: 100px;}
+#km_010911_VDayWarpper #vdayPurchaseWrapper {width:700; height:110px; background:url('images/010911_KmVday_decorBkgd.jpg') no-repeat right; padding: 25px 0px 0px 0px;}
+#km_010911_VDayWarpper #vday_kmLayaway {width:125px; height:90px; border-right: solid 2px #CCC; float: left;}
+#km_010911_VDayWarpper #vday_bopis {width:150px; height:90px; border-right: solid 2px #CCC; float: left; margin-left: 20px;}
+#km_010911_VDayWarpper #vday_shipping {height:90px; float: left; margin-left: 20px;}
+#km_010911_VDayWarpper .purchaseCTA {background:url('images/010911_KmVday_arrowCTA.jpg') no-repeat right; width:75px; margin-top: 10px;}
+
+
+/***** GIFT FINDER *****/
+#km_010911_VDay_GiftFinder {width: 100%; background:url('images/010911_KmVday_giftHeaderGreyBkgd.jpg') repeat-x; padding:0px 2px 2px 2px;}
+#vday_giftFinder_wrapper {background:url('images/010911_KmVday_giftHeaderPinkBkgd.jpg') repeat-x; height: 105px;}
+#vday_giftFinder_header {background:url('images/010911_KmVday_giftFinderTitle.jpg') no-repeat 35px 45px; width:1000px; height:100px;}
+#vday_giftFinder_header .giftFinder_nav {float: right; width:80px; height: 78px; margin: 15px 50px 0px 0px;}
+#vday_giftFinder_header a.nav_Decor_Hover {background:url('images/010911_KmVday_candyHeartsNav.jpg') no-repeat; display:block; width:80px; height: 78px; background-position: 0px -236px;}
+#vday_giftFinder_header a.nav_ForKids_Hover {background:url('images/010911_KmVday_candyHeartsNav.jpg') no-repeat; display:block; width:80px; height: 78px; background-position: 0px -157px;}
+#vday_giftFinder_header a.nav_ForHim_Hover {background:url('images/010911_KmVday_candyHeartsNav.jpg') no-repeat; display:block; width:80px; height: 78px; background-position: 0px -79px;}
+#vday_giftFinder_header a.nav_ForHer_Hover {background:url('images/010911_KmVday_candyHeartsNav.jpg') no-repeat; display:block; width:80px; height: 78px; background-position: 0px 0px;}
+
+
+.vdayGiftFinder_contentWrapper {width:734px; background:url('images/010911_KmVday_giftFinderBkgd.jpg') repeat-x bottom; float: right; margin-top: 10px; padding:0px 5px 5px 5px;}
+.vdayGiftFinder_content {background-color:#fff; padding: 15px;}
+.vdayGiftFinder_content ul li.categoryHeading {font-family:Verdana, Arial, sans-serif; font-size:18px; color: #ed509d; font-weight: lighter;}
+.vdayGiftFinder_content ul li.categoryLink {font-family: Arial, Helvetica, sans-serif; font-size:12px; color: #666; padding-left:10px; margin:0px;}
+.vdayGiftFinder_content ul li.categoryLink_line2 {font-family: Arial, Helvetica, sans-serif; font-size:12px; color: #666; padding-left:85px; margin:0px;}
+.vdayGiftFinder_content ul li.categoryLink_line3 {font-family: Arial, Helvetica, sans-serif; font-size:12px; color: #666; padding-left:132px; margin:0px;}
+.vdayGiftFinder_content ul {border-bottom: dashed 1px; padding:10px 0px; margin:0px;}
+.vdayGiftFinder_content ul li{list-style: none; display: inline; padding-left:0px;}
+.vdayGiftFinder_content ul.noBorder {border: none; padding-bottom:0px;}
+
+#dayGiftFinder_giftsForHer {display:none;}
+#dayGiftFinder_giftsForHim {display:none;}
+#dayGiftFinder_giftsForKids {display:none;}
+#dayGiftFinder_decor {display:none;}
+
+</style>
+</head>
+
+<body>
+<div id="km_010911_VDayWarpper">
+	<div id="vday_leftContent">
+		<div id="vdayLogo"></div><!--end vdayLogo-->
+        
+<!----------THIS IS WHERE THE CAROUSEL STARTS---------->        
+		<div id="vdayCarousel_wrapper">
+	  		<div id="vdayCarousel_slides">
+        		<h2><span class="bold">FREE</span> printable valentines</h2>
+            	<p>Download and print these cards for friends, family and classmates</p>
+            	<img src="images/010911_KmVday_carousel01.jpg" border="0"/>
+        		<p class="downloadCTA"><a href="#">downlaod now</a></p>
+          		<a href="javascript:;"><img src="images/010911_KmVday_arrowLeft.jpg" border="0" class="arrowLeft"/></a>
+          		<a href="javascript:;"><img src="images/010911_KmVday_arrowRight.jpg" border="0" class="arrowRight"/></a>
+        	</div><!--end vdayCarousel_slides-->
+		</div><!--end vdayCarousel_wrapper-->
+ <!----------THIS IS WHERE THE CAROUSEL ENDS---------->  
+        
+    </div><!--end vday_leftContent-->
+  
+	<div id="vday_rightContent">  
+  		<div id="vdayHero">
+        	<img src="images/010911_KmVday_HeroAd01.jpg" border="0" usemap="#kmVday_010911_Map"/>
+    		<map name="kmVday_010911_Map" id="kmVday_010911_Map">
+      			<area shape="rect" coords="297,277,450,311" href="#" alt="shop all jewelry"/>
+    		</map>
+  		</div><!--end vdayHero-->
+    
+		<div id="vdayPurchaseWrapper">
+			<div id="vday_kmLayaway">
+        		<h2><span class="bold">kmart</span> layaway</h2>
+        		<p>THE EASY WAY<br /> TO PAY</p>
+        		<p class="purchaseCTA"><a href="#">find out how</a></p>
+       		 </div>
+        	<div id="vday_bopis">
+        		<h2>Need it now?<br /><span class="bold">Buy online.<br />Pick-up in store.</span></h2>
+        		<p class="purchaseCTA"><a href="#">learn more</a></p>
+        	</div>
+        	<div id="vday_shipping">
+        		<h2><span class="bold">get it by Valentine's Day</span></h2>
+       	 		<p class="shipping"><span class="bold">GROUND SHIPMENTS</span> orders must be placed by <span class="pink">midnight CST Thursday February 3</span></p>
+          		<p class="shipping"><span class="bold">SECOND DAY ORDERS</span> orders must be placed by <span class="pink">10 am CST Wednesday February 9</span></p>
+          		<p class="shipping"><span class="bold">NEXT DAY ORDERS</span> orders must be placed by <span class="pink">10 am CST Thursday February 10</span></p>
+        	</div>
+   		 </div><!--end vdayPurchaseWrapper-->
+</div><!--end vday_rightContent-->
+
+<div class="clear"></div>
+
+	<div id="km_010911_VDay_GiftFinder">
+    	<div id="vday_giftFinder_wrapper">
+        	<div id="vday_giftFinder_header">
+            	<div id="giftNav_Decor" class="giftFinder_nav"><a href="javascript:;" class="nav_Decor_Hover"><span></span></a></div>
+                <div id="giftNav_Kids" class="giftFinder_nav"><a href="javascript:;" class="nav_ForKids_Hover"><span></span></a></div>
+                <div id="giftNav_Him" class="giftFinder_nav"><a href="javascript:;" class="nav_ForHim_Hover"><span></span></a></div>
+                <div id="giftNav_Her" class="giftFinder_nav"><a href="javascript:;" class="nav_ForHer_Hover"><span></span></a></div>
+            </div>
+		</div><!--end vday_giftFinder_wrapper-->
+            
+			<div id="dayGiftFinder_giftsForHer" class="vdayGiftFinder_contentWrapper">
+				<div class="vdayGiftFinder_content">
+					<ul id="electronics">
+						<li class="categoryHeading">electronics</li>
+						<li class="categoryLink"><a href="#">laptops &amp; netbooks</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">digital picture frames</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">ipods &amp; mp3 players</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">GPS systems</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">digital cameras</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+                    <ul id="clothing">
+						<li class="categoryHeading">clothing</li>
+						<li class="categoryLink"><a href="#">intimate apparel</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">satin intimates & lingerie</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">sleepwear</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">heart themed apparel</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+                     <ul id="jewelry">
+						<li class="categoryHeading">jewelry</li>
+						<li class="categoryLink"><a href="#">jewelry &amp; watches</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">jewelry boxes</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+					<ul id="shoes">
+						<li class="categoryHeading">shoes</li>
+						<li class="categoryLink"><a href="#">special occasion</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+					<ul id="healthWelness">
+						<li class="categoryHeading">health &amp; wellness</li>
+						<li class="categoryLink"><a href="#">spa treatment</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">body &amp; back messagers</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+                    <ul id="beauty">
+						<li class="categoryHeading">beauty</li>
+						<li class="categoryLink"><a href="#">fragrances</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+                    <ul id="forTheHome">
+						<li class="categoryHeading">for the home</li>
+						<li class="categoryLink"><a href="#">plush animals</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+                    <ul id="smKitchenAppl">
+						<li class="categoryHeading">small kitchen appliances</li>
+						<li class="categoryLink"><a href="#">coffee &amp; tea makers</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">Hamilton Beach collection</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+                    <ul id="magazines">
+						<li class="categoryHeading">magazines</li>
+						<li class="categoryLink"><a href="#">women's magazines</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+                    <ul id="foodGrocery">
+						<li class="categoryHeading">food &amp; grocery</li>
+						<li class="categoryLink"><a href="#">edible candy gift sets</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+                    <ul id="bedBath" class="noBorder">
+						<li class="categoryHeading">bed &amp; bath</li>
+						<li class="categoryLink"><a href="#">snuggies</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">sheet set collections</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">bed in a bag</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">monogram towels</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+				</div>
+			</div><!--end dayGiftFinder_giftsForHer-->
+            
+			<div id="dayGiftFinder_giftsForHim" class="vdayGiftFinder_contentWrapper">
+            	<div class="vdayGiftFinder_content">
+					<ul id="electronics">
+						<li class="categoryHeading">electronics</li>
+						<li class="categoryLink"><a href="#">laptops &amp; netbooks</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">digital picture frames</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">ipods &amp; mp3 players</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">GPS systems</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">digital cameras</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+                    <ul id="entertainment">
+						<li class="categoryHeading">entertainment</li>
+						<li class="categoryLink"><a href="#">gaming</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+                     <ul id="jewelry">
+						<li class="categoryHeading">jewelry</li>
+						<li class="categoryLink"><a href="#">jewelry &amp; watches</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+					<ul id="homeImprovment">
+						<li class="categoryHeading">home improvement</li>
+						<li class="categoryLink"><a href="#">tools</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+					 <ul id="smKitchenAppl">
+						<li class="categoryHeading">small kitchen appliances</li>
+						<li class="categoryLink"><a href="#">indoor grills</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+                    <ul id="magazines">
+						<li class="categoryHeading">magazines</li>
+						<li class="categoryLink"><a href="#">men's magazines</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+                    <ul id="beauty">
+						<li class="categoryHeading">beauty</li>
+						<li class="categoryLink"><a href="#">electric shavers</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+					<ul id="foodGrocery">
+						<li class="categoryHeading">food &amp; grocery</li>
+						<li class="categoryLink"><a href="#">edible candy gift sets</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">nuts &amp; snacks</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+                    <ul id="clothing">
+						<li class="categoryHeading">clothing</li>
+						<li class="categoryLink"><a href="#">Basic Editions men's jeans</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">Route 66 men's jeans</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">Basic Editions men's casual pants</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+                    <ul id="bedBath" class="noBorder">
+						<li class="categoryHeading">bed &amp; bath</li>
+						<li class="categoryLink"><a href="#">snuggies</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">bed in a bag</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">monogram towels</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+				</div>
+			</div><!--end dayGiftFinder_giftsForHim-->
+            
+            <div id="dayGiftFinder_giftsForKids" class="vdayGiftFinder_contentWrapper">
+            	<div class="vdayGiftFinder_content">
+					<ul id="toys">
+						<li class="categoryHeading">toys</li>
+						<li class="categoryLink"><a href="#">Hot Wheels</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">Barbie</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">Littlest Pet Shop</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">Lego</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">stuffed animals</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+                    <ul id="clothing">
+						<li class="categoryHeading">clothing</li>
+						<li class="categoryLink"><a href="#">Basic Edition girls jeans</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">Basic Edition boys jeans</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">Rider &amp; Wrangler infant &amp; toddler jeans</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/><br /></li>
+                        <li class="categoryLink_line2"><a href="#">heart themed apparel for girls</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">heart themed apparel for boys</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+                     <ul id="jewelry" class="noBorder">
+						<li class="categoryHeading">jewelry</li>
+						<li class="categoryLink"><a href="#">children's jewelry</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">children's jewelry boxes</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+                </div>
+            </div><!--end dayGiftFinder_giftsForKids-->
+            
+            <div id="dayGiftFinder_decor" class="vdayGiftFinder_contentWrapper">
+            	<div class="vdayGiftFinder_content">
+					<ul id="forTheHome" class="noBorder">
+						<li class="categoryHeading">for the home</li>
+						<li class="categoryLink"><a href="#">candles &amp; candleholders</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">decorative accents</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">Valentine scrapbook supplies</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/><br /></li>
+                        <li class="categoryLink_line3"><a href="#">Valentine bakeware</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+                        <li class="categoryLink"><a href="#">photo albums</a> <img src="images/010911_KmVday_arrowCTA.jpg" border="0"/></li>
+					</ul>
+                </div>
+            </div><!--end dayGiftFinder_decor-->
+		</div><!--end km_010911_VDay_GiftFinder-->
+        
+    <div class="clear"></div>
+    
+</div><!--end km_010911_VDayWarpper-->
+</body>
+</html>
